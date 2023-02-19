@@ -4,7 +4,6 @@ if not status_ok then
 end
 
 local actions = require("telescope.actions")
-telescope.load_extension("media_files")
 local icons = require("komil.icons")
 
 telescope.setup({
@@ -154,10 +153,6 @@ telescope.setup({
 		grep_string = {
 			theme = "dropdown",
 		},
-		find_files = {
-			theme = "dropdown",
-			previewer = false,
-		},
 		buffers = {
 			theme = "dropdown",
 			previewer = false,
@@ -202,5 +197,11 @@ telescope.setup({
 			filetypes = { "png", "webp", "jpg", "jpeg" },
 			find_cmd = "rg", -- find command (defaults to `fd`)
 		},
+    file_browser = {
+      theme = 'darkplus',
+    }
 	},
 })
+
+telescope.load_extension("media_files")
+telescope.load_extension("file_browser")

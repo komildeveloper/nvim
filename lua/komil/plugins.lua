@@ -77,6 +77,7 @@ return packer.startup(function(use)
 	})
 	use("nvim-lua/popup.nvim")
 	use("nvim-telescope/telescope-media-files.nvim")
+  use { "nvim-telescope/telescope-file-browser.nvim" }
 
   use "utilyre/barbecue.nvim"
   use "SmiteshP/nvim-navic"
@@ -105,6 +106,7 @@ return packer.startup(function(use)
   use { "rmagatti/auto-session" }
   use { "rmagatti/session-lens" }
   use { "NvChad/nvim-colorizer.lua" }
+  use { "rcarriga/nvim-notify" }
   -- use "natecraddock/sessions.nvim"
   -- use "goolord/alpha-nvim"
 
