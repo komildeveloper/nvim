@@ -1,5 +1,6 @@
 local M = {
   "karb94/neoscroll.nvim",
+  event = "BufEnter",
   commit = "d7601c26c8a183fa8994ed339e70c2d841253e93"
 }
 function M.config()

@@ -1,5 +1,6 @@
 local M = {
   "rcarriga/nvim-notify",
+  event = "BufEnter",
   commit = "159c6cf1be25a933f35e97499314c9faab55c98f"
 }
 function M.config()
